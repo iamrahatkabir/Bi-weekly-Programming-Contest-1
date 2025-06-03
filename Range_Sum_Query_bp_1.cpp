@@ -1,34 +1,13 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include <algorithm>
-#include <sstream>
-#include <queue>
-#include <deque>
-#include <bitset>
-#include <iterator>
-#include <list>
-#include <stack>
-#include <map>
-#include <set>
-#include <functional>
-#include <numeric>
-#include <utility>
-#include <limits>
-#include <time.h>
-#include <math.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <assert.h>
-
+#include <bits/stdc++.h>
 using namespace std;
+
+
 
 int main()
 {
     int n, q;
     cin >> n >> q;
-    char s[100001];
+    int s[n];
     // string s;
     for (int i = 1; i <= n; i++)
     {
@@ -47,7 +26,7 @@ int main()
 
         for (int i = l; i <= r; i++)
         {
-            sum += s[i]-'0';
+            sum += s[i];
         }
         cout << sum << endl;
     }
