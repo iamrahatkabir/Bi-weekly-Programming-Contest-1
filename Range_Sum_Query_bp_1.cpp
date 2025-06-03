@@ -7,7 +7,7 @@ int main()
 {
     int n, q;
     cin >> n >> q;
-    int s[n];
+    int s[n+1];
     // string s;
     for (int i = 1; i <= n; i++)
     {
