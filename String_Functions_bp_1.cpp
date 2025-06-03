@@ -22,6 +22,7 @@ int main()
         int reverse_string = command.find("reverse");
         int print_string = command.find("print");
         int substrac_string = command.find("substr");
+        int push = command.find("push_back");
         // cout << print_string << endl;
 
         if(command == "pop_back")
@@ -43,8 +44,8 @@ int main()
             int l = command.size();
             char lc = command[l-1];
             int rint = lc-'0';
-            int last_idx = rint-1;
-            cout << "last-> " << last_idx << endl;
+            int last_idx = rint;
+            // cout << "last-> " << last_idx << endl;
 
             
 
@@ -52,7 +53,7 @@ int main()
             char com = command[r-3];
             int r_x = com-'0';
             int first_idx = r_x-1;
-            cout << "first-> " << first_idx << endl;
+            // cout << "first-> " << first_idx << endl;
 
 
             sort(s.begin()+first_idx, s.begin()+last_idx);
@@ -62,7 +63,7 @@ int main()
             int l = command.size();
             char lc = command[l-1];
             int rint = lc-'0';
-            int last_idx = rint-1;
+            int last_idx = rint;
             // cout << "l-> " << last_idx;
 
             
@@ -100,14 +101,20 @@ int main()
             
             for(int sub = first_idx; sub <= last_idx; sub++)
             {
-                // cout << s[sub];
+                cout << s[sub];
             }
+            cout << endl;
+
+        }
+         else if(push != -1)
+        {
+            s.append("x");
 
         }
 
     }
 
-    cout << s;
+    // cout << s;
 
 
     return 0;
